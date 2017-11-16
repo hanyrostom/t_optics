@@ -1,8 +1,73 @@
-body {
+ html {
+  font-size: 18px;
+  line-height: 1.4;
+  }
+  body {
   color: red;
+  background-color: white;
+  font-family: Helvetica;
+  margin: 0 auto;
+  text-align: center;
+
+  }
+  .content {
+    max-width: 960px;
+
+  }
+  .banner{
+    position: fixed;
+    background-color: cadetblue;
+    width: 100%;
+
+
+
+  }
+.banner_material {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  color: pink;
+}
+  .drawing1 {
+    width: 3.5rem;
+    height: auto;
+  }
+  .drawing2 {
+    width: 5rem;
+    height: auto;
+  }
+  .logo_image{
+height: 1.5rem;
+width: auto;
+  }
+  .catch_phrase{
+    display: flex;
+    background-color: white;
+    opacity: 0.8;
+  }
+  .advantages {
+    display: flex;
+    height: 8rem;
+  }
+  .advantage {
+display: flex;
+flex-direction: column;
+  }
+  .bottom {
+    display: flex;
   }
   .main_banner {
+    height: 30rem;
     color:blue;
   background-image: url("../resources/images/glasses-bg.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer {
+  display: flex;
 }
