@@ -1,0 +1,8 @@
+body {
+  color: red;
+  }
+  .main_banner {
+    color:blue;
+  background-image: url("../resources/images/glasses-bg.png");
+  background-size: cover;
+}
