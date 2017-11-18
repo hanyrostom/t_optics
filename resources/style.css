@@ -121,6 +121,11 @@ top: 1rem;
   height: 1.5rem;
   margin-right: 1rem;
 }
+.logo_image img {
+  width: auto;
+  max-height: 100%;
+
+}
 
 .page_content{
 
@@ -135,58 +140,14 @@ top: 1rem;
   }
   .logo_image{
 height: 1.5rem;
-width: auto;
+border: 1px solid orange;
+
   }
   .container{
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
     width: 960px;
-  }
-  .catch_phrase{
-    display: flex;
-    background-color: white;
-    opacity: 1;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.2;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    margin-top: 15rem;
-    position: relative;
-    left: 2rem;
-  }
-  .adv_container{
-
-    margin: 0 auto;
-    width: 960px;
-  }
-  .advantages {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 8rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-
-
-  }
-  .advantage {
-display: flex;
-flex-direction: column;
-  }
-  .drawing2{
-    padding-bottom: 5rem;
-
-  }
-
-  .bottom {
-    display: flex;
-
-    width: 960px;
-    margin: 3rem auto 5rem auto;
   }
   .main_banner {
     position: relative;
@@ -198,6 +159,100 @@ flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
 }
+  .catch_phrase{
+    display: flex;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 15rem;
+    position: relative;
+    left: 2rem;
+  }
+
+  /* mid-section with the 3 images and captions */
+  /*option2 start */
+  .adv_container{
+
+    margin: 0 auto;
+    width: 960px;
+
+    margin-bottom: 3rem;
+  }
+  .containerX {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    height: 8rem;
+  }
+  .advantages_images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    border: 2px solid green;
+
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  .drawing1{
+    width: 3.5rem;
+    border: 1px solid orange;
+  }
+  .drawing3 {
+    width: 5rem;
+    border: 1px solid orange;
+  }
+  .drawing2 {
+    border: 1px solid black;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    width: 5rem;
+
+    border: 1px solid orange;
+  }
+.advantages_words {
+  display: flex;
+justify-content: center;
+  align-items: flex-start;
+
+  border: 1px solid blue;
+  position: relative;
+  bottom: -1.2rem;
+right:2rem;
+}
+.adv_text{
+  border: 1px solid aqua;
+
+}
+.test2{
+  padding-right: 6rem;
+  padding-left: 6rem;
+  position: relative;
+right:.6rem;
+}
+.test1 {
+  position: relative;
+right:-.5rem;
+}
+.test3 {
+  position: relative;
+right:-.9rem;
+}
+/*option2 end */
+/* bottom-section with the appointments and philosophy text*/
+
+  .bottom {
+    display: flex;
+    width: 960px;
+    margin: 3rem auto 5rem auto;
+  }
 .info_container{
   display: flex;
   flex-direction: column;
@@ -205,7 +260,6 @@ flex-direction: column;
   margin-left: 5%;
   position: relative;
   top: 1rem;
-
 }
 .appointments{
   margin-right: 20%;
@@ -231,7 +285,6 @@ footer{
 
 }
 .footer_content {
-
 padding-top: 4rem;
 padding-bottom: 4rem;
 padding-left: 4rem;
