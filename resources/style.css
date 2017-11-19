@@ -81,26 +81,22 @@ html {
   color: black;
   }
   body {
-
   background-color: white;
   font-family: Helvetica;
   margin: 0 auto;
   text-align: center;
-
+  height:auto;
   }
   .content {
-    position: relative;
-top: 1rem;
-        margin: 0 auto;
-        max-width: 960px;
-   background-color: cadetblue;
-   z-index: 32434432;
-
+  position: relative;
+  top: 1rem;
+  margin: 0 auto;
+  width: 960px;
+  background-color: cadetblue;
+  z-index: 32434432;
   }
   .banner_container{
-
     width: 100%;
-
   }
 .banner_material {
   display: flex;
@@ -109,7 +105,6 @@ top: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
-  padding-right: 2rem;
   align-items: center;
   color: white;
 }
@@ -124,11 +119,16 @@ top: 1rem;
 .logo_image img {
   width: auto;
   max-height: 100%;
+}
+.navigation span {
+  font-style: italic;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
 }
-
-.page_content{
-
+.menu {
+  display: none;
 }
   .drawing1 {
     width: 3.5rem;
@@ -177,10 +177,8 @@ border: 1px solid orange;
   /* mid-section with the 3 images and captions */
   /*option2 start */
   .adv_container{
-
     margin: 0 auto;
     width: 960px;
-
     margin-bottom: 3rem;
   }
   .containerX {
@@ -245,34 +243,25 @@ right:-.5rem;
   position: relative;
 right:-.9rem;
 }
-/*option2 end */
+
 /* bottom-section with the appointments and philosophy text*/
 
-  .bottom {
-    display: flex;
-    justify-content: flex-start;
-    width: 960px;
-    margin: auto auto 5rem auto;
-    border: 1px solid navy;
-  }
 .info_container{
   display: flex;
-  flex-direction: column;
+justify-content: flex-start;
 border: 1px solid red;
-
-
+width: 960px;
+margin: auto auto 5rem auto;
+background-color: pink;
 }
 
 .description{
-
   border: 1px solid black;
   color: firebrick;
-
+  text-align: left;
 
 }
-.appointments{
-  margin-right: 20%;
-}
+
 .info {
   color: white;
   background-color: cadetblue;
@@ -283,11 +272,17 @@ border: 1px solid red;
   margin-bottom: 1rem;
   font-weight: bold;
   width: 10rem;
+  text-align: left;
 }
 .when{
+  width:35%;
   margin-left: 5%;
 }
+.mantra{
+  width:35%;
+}
 footer{
+
   text-align: left;
   width: 960px;
   margin: 0 auto;
@@ -299,9 +294,308 @@ footer{
 padding-top: 4rem;
 padding-bottom: 4rem;
 padding-left: 4rem;
+display: flex;
+align-items:center;
 
 }
 .black_specs{
-  height: .1rem;
-  margin-right: 11rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.black_specs img {
+  width: auto;
+  max-height: 100%;
+
+}
+
+/* media query for desktop
+*/
+@media screen only
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px){
+    html {
+      font-size: 18px;
+      line-height: 1.4;
+      color: black;
+      }
+      body {
+      background-color: white;
+      font-family: Helvetica;
+      margin: 0 auto;
+      text-align: center;
+      height:auto;
+      }
+      .menu {
+        display: none;
+      }
+      .content {
+       position: relative;
+       top: 1rem;
+       margin: 0 auto;
+       max-width: 960px;
+       background-color: cadetblue;
+       z-index: 32434432;
+      }
+      .banner_container{
+        width: 100%;
+      }
+    .banner_material {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      align-items: center;
+      color: white;
+    }
+    .navigation span {
+      font-style: italic;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo_image {
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+    .logo_image img {
+      width: auto;
+      max-height: 100%;
+    }
+
+      .drawing1 {
+        width: 3.5rem;
+        height: auto;
+      }
+      .drawing2 {
+        width: 5rem;
+        height: auto;
+      }
+      .logo_image{
+    height: 1.5rem;
+    border: 1px solid orange;
+      }
+      .container{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        width: 960px;
+      }
+      .main_banner {
+        position: relative;
+        top: -5rem;
+        height: 30rem;
+        color:black;
+      background-image: url("../resources/images/glasses-bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+      .catch_phrase{
+        display: flex;
+        background-color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.2;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-top: 15rem;
+        position: relative;
+        left: 2rem;
+      }
+      .adv_container{
+        margin: 0 auto;
+        width: 960px;
+        margin-bottom: 3rem;
+      }
+      .containerX {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        height: 8rem;
+      }
+      .advantages_images {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border: 2px solid green;
+      }
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+      .drawing1{
+        width: 3.5rem;
+        border: 1px solid orange;
+      }
+      .drawing3 {
+        width: 5rem;
+        border: 1px solid orange;
+      }
+      .drawing2 {
+        border: 1px solid black;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        width: 5rem;
+        border: 1px solid orange;
+      }
+    .advantages_words {
+      display: flex;
+    justify-content: center;
+      align-items: flex-start;
+      border: 1px solid blue;
+      position: relative;
+      bottom: -1.2rem;
+    right:2rem;
+    }
+    .adv_text{
+      border: 1px solid aqua;
+    }
+    .test2{
+      padding-right: 6rem;
+      padding-left: 6rem;
+      position: relative;
+    right:.6rem;
+    }
+    .test1 {
+      position: relative;
+    right:-.5rem;
+    }
+    .test3 {
+      position: relative;
+    right:-.9rem;
+    }
+    .info_container{
+      display: flex;
+    justify-content: flex-start;
+    border: 1px solid red;
+    width: 960px;
+    margin: auto auto 5rem auto;
+    background-color: pink;
+    }
+    .description{
+      border: 1px solid black;
+      color: firebrick;
+      text-align: left;
+    }
+    .info {
+      color: white;
+      background-color: cadetblue;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      width: 10rem;
+      text-align: left;
+    }
+    .when{
+      width:35%;
+      margin-left: 5%;
+    }
+    .mantra{
+      width:35%;
+    }
+    footer{
+      text-align: left;
+      width: 960px;
+      margin: 0 auto;
+      background-color: orange;
+      margin-top: 5rem;
+    }
+    .footer_content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    align-items:center;
+    }
+    .black_specs{
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+    .black_specs img {
+      width: auto;
+      max-height: 100%;
+    }
+  }
+/* media query for tablets
+*/
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1200px) {
+    .content{
+      width: 100%;
+      position: fixed;
+      z-index: 9999999999;
+      top:0rem;
+    }
+    .menu {
+      display: none;
+    }
+    .main_banner {
+      top: 0rem;
+      height: 22rem;
+      max-width:auto;
+      color:black;
+  }
+div .catch_phrase {
+  margin-right: 2rem;
+  font-size: 1.33rem;
+  padding: 0.75rem 4rem;
+  margin-top: 8rem;
+}
+}
+/* media query for phones
+*/
+@media only screen
+  and (max-device-width: 768px) {
+    .content{
+      width: 100%;
+      position: fixed;
+      z-index: 9999999999;
+      top:0rem;
+    }
+    .main_banner {
+      top: 0rem;
+      height: 17rem;
+      width: 100%;
+      background-position: 20%;
+  }
+  .navigation {
+    display: none;
+  }
+  .logo_title {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    padding-right: 2rem;
+  }
+div .catch_phrase {
+  width: 100%;
+  font-size: 1rem;
+  opacity: 0.9;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: auto;
+  padding-right: auto;
+  margin-left: 0;
+  left: 0rem;
+    line-height: 1;
+    margin-top: 13rem;
+    position: relative;
+
+  }
+}
 }
