@@ -124,7 +124,7 @@ html {
   max-height: 100%;
 }
 .navigation span {
-  font-style: italic;
+
   margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -354,7 +354,7 @@ align-items:center;
       color: white;
     }
     .navigation span {
-      font-style: italic;
+      
       margin-right: 2rem;
       margin-top: 1rem;
       margin-bottom: 1rem;
